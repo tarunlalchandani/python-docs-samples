@@ -10,12 +10,12 @@ env_variables:
     # Replace user, password, database, and instance connection name with the values obtained
     # when configuring your Cloud SQL instance.
     SQLALCHEMY_DATABASE_URI: >-
-      postgresql+psycopg2://USER:PASSWORD@/DATABASE?host=/cloudsql/INSTANCE_CONNECTION_NAME
+      postgresql+psycopg2://postgres:Prabhupada@1965@/goodgrades-name-db?host=/cloudsql/goodgrades-name-db
 #[END gae_flex_postgres_env]
 
 #[START gae_flex_postgres_settings]
 # Replace project and instance with the values obtained  when configuring your
 # Cloud SQL instance.
 beta_settings:
-    cloud_sql_instances: INSTANCE_CONNECTION_NAME
+    cloud_sql_instances: goodgrades-name-db
 #[END gae_flex_postgres_settings]
